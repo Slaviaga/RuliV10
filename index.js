@@ -22,7 +22,7 @@
    🍁– WEBSITE CLOSE BOT TETAP ON
 
    🔰「 BUY PANEL BOT 」
-    •  https://wa.me/6288210828960
+    •  https://wa.me/6289516193660
 
 */
 // require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
@@ -39,20 +39,22 @@ const path = require('path')
 const _ = require('lodash')
 const axios = require('axios')
 const PhoneNumber = require('awesome-phonenumber')
-const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
-const owo = JSON.parse(fs.readFileSync('./lib/koi.json'))
-const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep, reSize } = require('./lib/myfunc')
+const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./bil/exif')
+const owo = JSON.parse(fs.readFileSync('./bil
+				       /koi.json'))
+const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep, reSize } = require('./bil/myfunc')
 
         
 var low
 try {
   low = require('lowdb')
 } catch (e) {
-  low = require('./lib/lowdb')
+  low = require('./bil/lowdb')
 }
 
 const { Low, JSONFile } = low
-const mongoDB = require('./lib/mongoDB')
+const mongoDB = require('./bil
+			/mongoDB')
 
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
